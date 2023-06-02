@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey From</title>
+    <link rel="stylesheet" href="./sources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sources/css/survey.css">
+    <link rel="icon" href="./sources/images/top-icon.png">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-6">
+    <!-- Button to Open the Modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#survey" class="survey">
+    OPEN SURVEY FORM
+  </button>
+  <a href="index.html"><button class="button">Get Back</button></a>
+  
+  <!-- The Modal -->
+  <div class="modal" id="survey">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Student SurVey Form</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form action="/action_page.php">
+            
+              <label for="fname">First name:</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">Last name:</label><br>
+              <input type="text" id="lname" name="lname"><br>
+              <label for="Mname">Middle name:</label><br>
+              <input type="text" id="Mname" name="Mname">
+              <h2>Select Year and Section</h2>
+              <label for="year">Choose Year:</label>
+              <select id="year" name="year">
+                <option value="num1">1st Year</option>
+                <option value="num2">2nd Year</option>
+                <option value="num3">3rd Year</option>
+                <option value="num4">4th year</option>
+              </select>
+              <br>
+              <label for="section">Selcect your Section:</label>
+              <select id="section" name="section">
+                <option value="section1">A</option>
+                <option value="section2">B</option>
+                <option value="section3">C</option>
+                <option value="section4">D</option>
+              </select>
+              <br>
+              <h2>CHoose Your Degree</h2>
+              <input type="radio" id="css" name="fav_language" value="degree1">
+              <label for="degree1">BSIT</label><br>
+              <input type="radio" id="javascript" name="fav_language" value="degree2">
+             <label for="degree2">BSHM</label><br>
+             <input type="radio" id="javascript" name="fav_language" value="degree3">
+            <label for="degree3">BSED</label><br>
+            <input type="radio" id="html" name="fav_language" value="">
+            <label for="section4">BEED</label>
+    
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+           
+            <label for="comment">Comments:</label>
+  <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            <div class="form-check mb-3">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="remember"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CLose</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+              
+            
+          </div>
+      </div>
+    </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="./sources/js/bootstrap.bundle.min.js"></script>
+    <script src="./sources/js/aos.js"></script>
+    <script src="./sources/js/main.js"></script>
+</body>
+</html>
